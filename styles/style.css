@@ -27,110 +27,6 @@
   object-fit: cover;
 }
 
-/* .buttons {
-  position: relative;
-  background-color: var(--background-color);
-  font-family: var(--accent-font);
-  font-size: 14px;
-  text-align: center;
-  border: 2px solid var(--border-color);
-  transition: 0.5s ease-in-out;
-} */
-
-/* .buttons {
-  color: var(--button-text-color);
-  position: relative;
-  outline: none;
-  border: 2px solid var(--border-color);
-  background-color: var(--background-color);
-  cursor: pointer;
-  mix-blend-mode: difference;
-  /* appearance: none; 
-}*/
-
-/* .save__button-image {
-  inline-size: 28px;
-  block-size: 28px;
-}
-
-@media (width >= 376px) {
-  .save__button-image {
-    inline-size: 21px;
-    block-size: 21px;
-    z-index: 1;
-    position: relative;
-    mix-blend-mode: difference;
-  }
-}
-
-
-
-.buttons {
-  position: relative;
-  font-family: var(--accent-font);
-  font-size: 14px;
-  background-color: var(--background-color);
-  border: 2px solid var(--border-color);
-  cursor: pointer;
-  mix-blend-mode: difference;
-
-}
-
-.buttons::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--contrast-color);
-  transition: 0.5s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left center;
-  mix-blend-mode: difference;
-  z-index: 1;
-}
-
-.buttons:hover::after {
-  transform: scaleX(1);
-}
-
-.buttons:focus {
-  outline: none;
-  box-shadow: none;
-  cursor: pointer;
-}
-
-.buttons:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--button-text-color);
-  transition-duration: 0.3s;
-} 
-
-.save__button {
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-  align-items: center;
-  margin-inline: auto;
-  inline-size: 306px;
-  padding: 15px 0 15px;
-  margin-block-end: 100px;
-}
-
-
-@media (width >= 376px) {
-  .save__button {
-    flex-direction: row;
-    padding-inline-start: 19px;
-    inline-size: 335px;
-  }
-}
-
-.button__text {
-  position: relative;
-  font-family: var(--accent-font);
-  font-size: 14px;
-  mix-blend-mode: difference;
-  z-index: 1;
-} */
-
 .buttons {
   color: var(--button-text-color);
   position: relative;
@@ -168,20 +64,25 @@
 
 .save__button {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin: 50px auto 100px;
+  margin: 0 auto 100px;
   padding: 15px 20px;
   box-shadow: none;
 }
 
-/* .save__button-image {
-  
-} */
+@media (width >= 376px) {
+  .save__button {
+    flex-direction: row;
+    padding-inline-start: 19px;
+    inline-size: 335px;
+  }
+}
 
 .floppy {
-  fill: green;
+  fill: var(--contrast-color);
   z-index: 1;
   position: relative;
   block-size: 28px;
@@ -193,11 +94,8 @@
   .floppy {
     inline-size: 21px;
     block-size: 21px;
-    z-index: 1;
-    position: relative;
-    mix-blend-mode: difference;
   }
-
+}
 
 .button__text {
   z-index: 1;
@@ -367,7 +265,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--text-color); /*исправить цвет*/
+  outline: 2px solid var(--text-button-color); 
 }
 
 .like-icon {
@@ -549,5 +447,3 @@ dialog::backdrop {
     max-width: 234px;
   }
 }
-
-
