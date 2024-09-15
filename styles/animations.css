@@ -14,52 +14,17 @@
 */
 
 .theme-menu__button:disabled::before {
-    animation: arrow-animation 0.5s ease-in-out infinite alternate;
-  }
+  animation: arrow-animation 0.5s ease-in-out infinite alternate;
+}
 
   @keyframes arrow-animation {
-    from {
-      left: -20px;
-    }
-    to {
-      left: -16px;
-    }
+  from {
+    left: -20px;
   }
-
-  
-  /* .like-icon.is-liked .main-body {
-    animation: scale-animation 0.3s ease-in 0.1s 1 alternate;
+  to {
+    left: -16px;
   }
-  
-  .like-icon.is-liked .sparks {
-    animation: sparks-animation 0.3s ease-in 0.3s 1 alternate;
-  }
-  
-
-  
-  @keyframes scale-animation {
-    from {
-      scale: 1;
-    }
-    50% {
-      scale: 1.15;
-    }
-    100% {
-      scale: 1.5;
-    }
-  }
-  
-  @keyframes sparks-animation {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  } */
-
-
-
+}
 
 @keyframes heart {
   from {

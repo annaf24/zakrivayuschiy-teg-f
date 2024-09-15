@@ -2,7 +2,7 @@
 
 :root {
     --main-font: Inter, sans-serif;
-    --accent-font: 'Press Start 2P';
+    --accent-font: 'Press Start 2P', fantasy;
     --title-font-weight: 700;
     --text-font-weight: 400;
     --background-color: #FFFFFF;
@@ -16,6 +16,5 @@
     --heart-main-color: #FF0000;
     --button-text-color: var(--background-color);
     --contrast-color: #000000;
-
 }
 
